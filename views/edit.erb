@@ -1,5 +1,23 @@
-Editing the page: <%= page %><br />
-<form action="<%= page %>" method="post">
-  <textarea name="content"><%= content %></textarea>
-  <input type="submit" value="Save">
-</form>
+<htm>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/themes/docreader/main.css" />
+</head>
+<body>
+<div id="wrap">
+	<div id="header"></div>
+	<form action="<%= page %>" method="post">
+		<div id="main">
+			  <textarea name="content"><%= content %></textarea>
+			</form><p>
+		</div>
+	<div id="sidebar">
+		<input type="submit" value="Save">
+	</div>
+	<div id="footer">
+		page:<%= page%>
+	</div>
+</div>
+</body>
+</html>
